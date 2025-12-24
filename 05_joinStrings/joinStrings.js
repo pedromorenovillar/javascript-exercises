@@ -9,8 +9,29 @@
 
 // Add your code right below, good luck!
 
+const firstName = "Carlos";
+const lastName = "Stevenson"
+const fullName = firstName + " " + lastName
+const thisYear = 1965
+const birthYear = 1947
+const age = thisYear - birthYear
+const greeting = `Hello! My name is ${fullName} and I am ${age} years old.`
 
+function capitalize(string) {
+  let capitalFirstLetter = string.charAt(0).toUpperCase();
+  let lowerCaseString = string.toLowerCase();
+  let newString = lowerCaseString.replace(lowerCaseString.charAt(0), capitalFirstLetter)
+  return newString
+}
+console.log(capitalize("abcd"))
+console.log(capitalize("ABCD"))
+console.log(capitalize("aBcD"))
 
+function lastLetter(string) {
+  return `the last letter of the string is ${string.at(-1)}`
+}
+
+console.log(lastLetter("abcd"))
 
 
 // Do not change this
